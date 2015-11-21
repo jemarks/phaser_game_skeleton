@@ -118,5 +118,5 @@ gulp.task('watch', function () {
   return gulp.watch(['./src/index.html', paths.css, paths.js], ['build', 'html']);
 });
 
-gulp.task('default', ['connect', 'watch', 'build']);
+gulp.task('default', ['watch', 'build']);
 gulp.task('build', ['clean', 'copy', 'copylibs', 'compile', 'minifycss', 'processhtml', 'minifyhtml']);
