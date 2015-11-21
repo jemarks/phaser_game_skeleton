@@ -108,7 +108,7 @@ gulp.task('html', ['build'], function(){
 gulp.task('connect', function () {
   connect.server({
     root: ['./dist'],
-    port: 8080,
+    port: 9000,
     livereload: true
   });
 });
@@ -118,5 +118,5 @@ gulp.task('watch', function () {
   return gulp.watch(['./src/index.html', paths.css, paths.js], ['build', 'html']);
 });
 
-gulp.task('default', ['watch', 'build']);
+gulp.task('default', ['connect', 'watch', 'build']);
 gulp.task('build', ['clean', 'copy', 'copylibs', 'compile', 'minifycss', 'processhtml', 'minifyhtml']);
