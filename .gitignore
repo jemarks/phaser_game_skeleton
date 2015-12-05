@@ -30,7 +30,7 @@ bower_components
 node_modules
 
 # Project Folders
-.dist
+dist
 .tscache
 .test
 .compiled
