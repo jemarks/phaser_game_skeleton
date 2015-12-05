@@ -4,36 +4,16 @@
   "readme": "",
   "repository": "",
   "version": "0.0.0",
-  "readme": "",
-  "repository": "",
-  
   "devDependencies": {
     "bower": "*",
-    "gulp": "*",
-    "gulp-util": "*",
-    "del": "*",
-    "gulp-concat": "*",
-    "gulp-download": "*",
-    "gulp-rename": "*",
-    "gulp-minify-css": "*",
-    "gulp-minify-html": "*",
-    "gulp-processhtml": "*",
-    "gulp-jshint": "*",
-    "gulp-uglify": "*",
-    "gulp-connect": "*",
-    "gulp-watch": "*",
-    "browserify": "*",
-    "tiny-lr": "*",
-    "vinyl-source-stream": "*",
-    "gulp-streamify": "*",
-    "watchify": "*",
-    "gulp-if": "*",
-    "vinyl-paths": "*"
-  },
-
-  "scripts": {
-    "post-install": "node ./node_modules/bower/bin/bower install",
-    "start": "node ./node_modules/gulp/bin/gulp.js",
-    "build": "node ./node_modules/gulp/bin/gulp.js build"
+	"grunt": "^0.4.5",
+    "grunt-browserify": "^4.0.1",
+    "grunt-cache-breaker": "^2.0.1",
+    "grunt-contrib-clean": "^0.7.0",
+    "grunt-contrib-connect": "^0.11.2",
+    "grunt-contrib-copy": "^0.8.2",
+    "grunt-contrib-cssmin": "^0.14.0",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-open": "^0.2.3"
   }
 }

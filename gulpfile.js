@@ -50,7 +50,7 @@ gulp.task('copylibs', ['clean'], function () {
 });
 
 gulp.task('compile', ['clean'], function () {
-  var bundler = browserify({
+  var bundler = ({
     cache: {}, packageCache: {}, fullPaths: true,
     entries: [paths.entry],
     debug: watching
