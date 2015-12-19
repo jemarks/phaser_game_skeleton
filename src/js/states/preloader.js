@@ -8,12 +8,14 @@ module.exports = Preloader;
 Preloader.prototype = {
 
   preload: function () {
-    this.asset = this.add.sprite(320, 240, 'preloader');
+    this.asset = this.add.sprite(this.game.width/2, this.game.height/2, 'preloader');
     this.asset.anchor.setTo(0.5, 0.5);
 
     this.load.onLoadComplete.addOnce(this.onLoadComplete, this);
     this.load.setPreloadSprite(this.asset);
-    this.load.image('testsprite', 'assets/test.png');
+    this.load.image('testimage', 'assets/test.png');
+    this.load.image('logo', 'assets/LizardBoys.gif');
+
   },
 
   create: function () {
@@ -22,7 +24,8 @@ Preloader.prototype = {
 
   update: function () {
     if (!!this.ready) {
-      this.game.state.start('Menu');
+      this.game.state.start('Splash');
+
     }
   },
 
